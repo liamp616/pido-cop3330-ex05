@@ -52,13 +52,15 @@ public class App {
 
     public int readSecNum() {
         System.out.print("What is the second number? ");
-        int secNum = in.nextInt();
-        return secNum;
+        String secNum = in.nextLine();
+        int sec = Integer.parseInt(secNum);
+        return sec;
     }
 
     public int readFirstNum() {
         System.out.print("What is the first number? ");
-        int firstNum = in.nextInt();
-        return firstNum;
+        String firstNum = in.nextLine();
+        int first = Integer.parseInt(firstNum);
+        return first;
     }
 }
